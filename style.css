@@ -1,0 +1,345 @@
+*{
+  padding:0;
+
+}
+body{
+	font-family: 'Times New Roman';
+	background:#000;
+	padding: 0;
+	margin:0;
+  min-width: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 70px;
+  margin-left: 100px;
+}
+nav{
+  position: fixed;
+  top:0;
+  left:0;
+  bottom: 0;
+  height: 100%;
+  background: black;
+  width: 170px;
+  color: white;
+  outline: none;
+  overflow: hidden;
+  transition: width 0.2s linear;
+  padding:0;
+  margin: 0;
+  box-shadow: 0 1px 20px 0 rgba(255, 255, 255, 0.877);
+  font-weight: bold;
+}
+
+a{
+  position: relative;
+  color: white;
+  font-size: 20px;
+  display: table;
+  width: 100%;
+  padding: 10px;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top:80px;
+}
+a:hover{
+  background: white;
+  color:black;
+}
+.wrapper{
+	position:relative;
+	width:100%;
+  max-width: 1000px;
+  min-height:1800px ;
+	display:flex;
+	box-shadow: 0 1px 20px 0 rgba(255, 255, 255, 0.877);
+	color:white;
+  
+}
+.wrapper .left{
+	width:40%;
+	background: linear-gradient(to right,rgb(38, 41, 66),rgba(45, 40, 58, 0.39));
+
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	color:#fff;
+  
+}
+.wrapper .left img{
+	border-radius: 5px;  
+  width: 250px;
+  height: 230px;
+  margin-top: 20px;
+ margin-left: 60px;
+}
+.wrapper .left .name{
+  background-color: yellow;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 35px;
+  height: 100px;
+  padding-top: 20px;
+}
+.wrapper .left p {
+	font-size:13px
+}
+.skills h4{
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 20px;
+    padding:0 10px 0 10px;
+    color: yellow;
+}
+.skills ul li {
+
+  line-height: 30px;
+  font-family: 'Lucida Sans';
+  margin-left: 70px; 
+  padding:0 10px 0 10px; 
+}
+.training h4{
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 20px;
+  padding:0 10px 0 10px;
+  color: yellow;
+}
+.training ul li {
+    line-height: 30px;
+  font-family: 'Lucida Sans';
+  margin-left: 70px;  
+  padding:0 10px 0 10px;
+}
+.honor h4{
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 20px;
+  padding:0 10px 0 10px;
+  color: yellow;
+}
+.honor ul li {
+    line-height: 30px;
+  font-family: 'Lucida Sans';
+  margin-left: 70px;  
+  padding:0 10px 0 10px;
+}
+.interest h4{
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 20px;
+  padding:0 10px 0 10px;
+  color: yellow;
+}
+.interest ul li {
+    line-height: 30px;
+  font-family: 'Lucida Sans';
+  margin-left: 70px;  
+  padding:0 10px 0 10px;
+}
+.language h4{
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 20px;
+  padding:0 10px 0 10px;
+  color: yellow;
+  margin-bottom: 10px;
+}
+
+.language .bar{
+  margin:20px 20px 0 20px;
+}
+
+.language .bar:first-child{
+  margin-top: 0px;
+  
+}
+.language .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+}
+.language .bar .progress-line{
+  position: relative;
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0,0.5),
+                    0 1px rgba(255,255,255,0.8);
+}
+.bar .progress-line span{
+  height: 100%;
+  width: 80%;
+  background: yellow;
+  position: absolute;
+  border-radius: 10px;
+}
+.progress-line.english span{
+  width: 70%;
+}
+.progress-line.tagalog span{
+  width: 90%;
+}
+
+.bar .progress-line span::before{
+  position: absolute;
+  content: "";
+  right: 0;
+  top: -10px;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width:0px ;
+  border-right-width: 0px;
+  border-top-color: #000;
+}
+.bar .progress-line span::after{
+  position: absolute;
+ 
+  right: 0;
+  top: -23px;
+  font-size: 12px;
+  font-weight: bold;
+  border-top-color: #000;
+  padding:1px 8px;
+  border-radius: 3px;
+}
+.progress-line.english span::after{
+  content: "70%";
+}
+.progress-line.tagalog span::After{
+ content: "90%";
+}
+.special h4{
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 20px;
+  padding:0 10px 0 10px;
+  color: yellow;
+}
+.special ul li {
+    line-height: 30px;
+  font-family: 'Lucida Sans';
+  margin-left: 70px;  
+  padding:0 10px 0 10px;
+}
+
+
+
+
+.wrapper .right{
+	width: 65%;
+	background: rgb(0, 0, 0);
+	border-top-left-radius: 5px;
+	border-bottom-right-radius: 5px  ;
+	padding:20px 25px;
+	color: white;
+}
+
+.wrapper .right .info h3{
+	margin-bottom: 45px;
+	padding-bottom: 5px;
+	border-bottom:1px solid #e0e0e0;
+	color:YELLOW;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 30px;
+}
+.wrapper .right .info_data p{
+  letter-spacing: 2px;
+  text-align:justify;
+  line-height: 20px;
+  margin: 20px;
+}
+.wrapper .right .contacts {
+    font-size: 15px;
+    line-height: 0;
+   padding-top: 2px;
+   margin: 0;
+   margin-bottom: 20px;
+}
+.contacts h5{
+  color: yellow;
+  font-size: 12px ;
+}
+.contacts p{
+  margin-left: 30px;
+  
+}
+.work h4{
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 20px;
+  padding:0 10px 0 10px;
+  color: yellow;
+  margin-top:25px;
+  text-align: center;
+}
+.work h5{
+  font-size:15px;
+  font-weight: bold;
+  color: blue;
+  padding:0;
+}
+.work ul li{
+  margin-left: 50px;
+}
+.education h4{
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 20px;
+  padding:0 10px 0 10px;
+  color: yellow;
+  margin-top:25px;
+  text-align: center;
+}
+.education ul li{
+  margin-left: 50px;
+}
+.education h5{
+  font-size:15px;
+  font-weight: bold;
+  color: blue;
+  padding:0;
+}
+
+.otherinfo h4{
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 20px;
+  padding:0 10px 0 10px;
+  color: yellow;
+  margin-top:25px;
+  text-align: center;
+}
+.otherinfo span{
+  color: yellow;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.reference h4{
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 20px;
+  padding:0 10px 0 10px;
+  color: yellow;
+  margin-top:25px;
+  text-align: center;
+}
+.reference h5{
+  font-weight: bold;
+  font-size: 15px;
+  color: yellow;
+}
+.reference p{
+  margin-left: 30px;
+}
+
+
+
+
+
